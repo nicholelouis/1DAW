@@ -5,5 +5,5 @@ for i in range(entrada):
         print(i)
         multiplo += i 
     elif multiplo >= entrada:
-        break
+        break 
                       
