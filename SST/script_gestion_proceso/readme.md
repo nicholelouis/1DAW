@@ -28,3 +28,4 @@ Crear un script en Bash que:
 NOTA:  El comando ps tiene múltiples opciones para mostrar sólo la información que nos interesa, para ordenar la lista por diferentes criterios, etc. Investiga estas opciones para obtener el proceso con mayor uso de %CPU y el proceso con más uso de %MEM.
 
 ¡CUIDADO!!! Usar sudo SOLO CUANDO SEA ESTRICTAMENTE NECESARIO!!
+ 
