@@ -3,7 +3,7 @@
 ## Modelo en Cascada
 
 El modelo en cascada es un enfoque lineal y secuencial para el desarrollo de software.
-![Modelo en Cascada](https://cdnb.ganttpro.com/uploads/2021/10/waterfall-metodologia-cascada-ejemplo.png)
+![Modelo en Cascada](https://cdnb.ganttpro.com/uploads/2021/10/waterfall-metodologia-cascada-ejemplo.png) 
 
 ## Modelo en Cascada con Realimentación
 
