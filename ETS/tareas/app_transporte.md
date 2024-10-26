@@ -4,7 +4,7 @@ En este análisis, examinaremos el diagrama de comportamiento presente en la ima
 
 ## Diagrama de comportamiento
 
-### Actores
+### Actores 
 
 | **Actor**       | Administrador                                       |
 |-----------------|-----------------------------------------------------|
