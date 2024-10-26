@@ -1,0 +1,40 @@
+#!/bin/bash
+
+if [ $# -eq 0]
+ then
+	echo "Introduzca un nombre de paquete"
+	exit 1
+fi
+apt-get update
+dpkg -s $1 >/dev/null 2>/dev/null
+
+if [$? -ne 0]
+ then 
+	echo "EL $1 no esta instalado"
+	apt-cache show $1
+	echo "Si lo quiere instalar presione 1, si no presione 0"
+	read -p opcion
+	case $opcion in 
+	      "" | 1)
+		sudo apt-get install $1
+	      "" | 0)
+            	echo "Saliendo del programa. ¡Hasta luego!"
+            	exit 0
+else
+	echo"El paquete $1 esta instalado."
+	echo "1. Mostrat información con respecto al paquete."
+	echo "2. Reinstalar el paquete."
+	echo "3. Actiualizar este paquete."
+	echo "4. Eliminar paquete gurdando su configuración."
+	echo "5. Eliminar por completo el paquete."
+	echo "0. Salir"
+	read -p "Seleccione una opción: " opcion
+	
+	case $opcion in
+
+         	 "" | 1)
+		   apt-cache $1
+                 "" | 0)  
+                   echo "Saliendo del programa. ¡Hasta luego!"
+                   exit 0
+
