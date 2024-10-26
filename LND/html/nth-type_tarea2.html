@@ -1,0 +1,47 @@
+<DOCTYPE html> 
+    <html lang="en"> 
+    <head>
+    <meta charset="UTF- 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tarea nth-of-type</title>
+    <!-- La difencia entre el nth-child el nth-of-type radica en cómo seleccionan los elementos en 
+        relación con su estructura en el árbol DOM.
+    El nth-child se basa únicamente en la posición del elemento en relación con sus hermanos, mientras 
+    que nth-of-type se basa en la posición del elemento dentro de su tipo específico dentro del 
+    contenedor padre.--> 
+    <style>
+    /* Estilo para el primer elemento de la lista */
+    li:nth-of-type(1) {
+        background-color: purple;
+        color: lightgray;
+    }
+
+    /* Estilo para el segundo elemento de la lista */
+    li:nth-of-type(2) {
+        color: lightgray;
+        background-color: plum;
+    }
+    /* Estilo para el tercero elemento de la lista */
+    li:nth-of-type(3) {
+        background-color: purple;
+        color: lightgray;
+    }
+    /* Estilo para el cuarto elemento de la lista */
+    li:nth-of-type(4) {
+        color: lightgray;
+        background-color: plum;
+    }
+    /* Estilo para el quinto elemento de la lista */
+    li:nth-of-type(5) {
+        background-color: purple;
+        color: lightgray;
+    }
+    </style>
+<ul>
+    <h2>Ciudades que quiero visitar</h2>
+    <li>Amsterdam</li>
+    <li>Berlin</li>
+    <li>Bali</li>
+    <li>Canaima</li>
+    <li>Nueva York</li>
+  </ul>

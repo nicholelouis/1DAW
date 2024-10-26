@@ -1,0 +1,25 @@
+.div-2 {
+    background-color: orange;
+    border: 2px;
+    border-color: orangered;
+}
+.div-1 {
+    background-color: lightyellow;
+    border: 2px dotted black; 
+    padding: 50px; 
+    text-align: center;
+}
+.div-3 {
+    color: green;
+    padding: 50;
+}
+.div-4 {
+    background-color: lightgray; 
+}
+.question {
+    color: blue;
+}
+.answer {
+    background-color: aqua;
+    color: red;
+}

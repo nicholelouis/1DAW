@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Nichole" content="Louis">
+    <meta name="description" content="Practica de formularios en html">
+    <meta name="keywords" content="informatica, desarrollo web, tablas html">
+    <title>Mis primero formularios</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+        }
+      
+        form {
+          width: 1900px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .fieldset1 {
+    background-color: #d7d5d5
+    }
+    .fieldset2 {
+        background-color:#efd7a0; 
+    }
+    .fieldset3 {
+        background-color: #f18c8c;
+    }
+    legend {
+    background-color: white; 
+    padding: 0 10px; 
+    border: 1px solid black;
+    }
+      </style>
+</head>
+<body>
+        <form>
+            <h1>HOJA DE INSCRICIÓN<br>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+            <fieldset class="fieldset1">
+              <legend>Datos Personales</legend>
+              <p>
+                <label for="inombre">Nombre:</label>
+                <input type="text" id="iname" name="Nombre">
+                <label for="iapellidos">Apellidos:</label>
+                <input type="text" id="iapellidos" name="apellidos">
+                <label for="idni">DNI</label>
+                <input type="text" id="idni" name="dni"> 
+              </p>
+              <p>
+                <label for="inaciemiento">Loscalidad de nacimeinto</label>
+                <input type="text" id="inaciemiento" name="nacimiento"> 
+                <label for="iprovincia">Provincia</label>
+                <select name="provincia" id="iprovincia">
+                    <option value="1">Provincia1</option>
+                    <option value="1">Provincia2</option>
+                    <option value="1">Provincia3</option>
+                    <option value="1">Provincia4</option>
+                </select>
+                <label>Fecha de nacimiento
+                    <input type="date" name="bday" required pattern="dd/mm/aaaa" />
+                    <span class="validity"></span>
+                </label>
+              </p>
+              <p>
+                <label for="idireccion">Dirección:</label>
+                <input type="text" id="idireccion" name="direccion">
+                <label for="icp">Codigo Postal:</label>
+                <input type="text" id="icp" name="cp">
+              </p>
+            </fieldset>
+            <fieldset class="fieldset2">
+            <legend>Forma de Acceso</legend>
+                <p>
+                    <input type="radio" id="isexo" name="Sexo">Direct</input>
+                </p>
+                <ul>
+                    <p>
+                        <input type="radio" id="isexo" name="Sexo">Bachillerato LOGSE Modalidad</input><input type="text" id="" name=""></input>
+                    </p>
+                    <p>
+                        <input type="radio" id="isexo" name="Sexo">Bachillerato Experimental</input>
+                    </p>
+                    <p>
+                        <input type="radio" id="isexo" name="Sexo">COU. Opción</input><input type="text" id="" name=""></input>
+                    <p>
+                        <input type="radio" id="isexo" name="Sexo">FP2</input>
+                    </p>
+                    <p>
+                        <input type="radio" id="isexo" name="Sexo">Otros(Especifique)</input><input type="text" id="" name=""></input>
+                    </p>
+                </ul>
+                <p>
+                    <input type="radio" id="pl" name="pl">Prueba Libre</input>
+                </p>
+            </fieldset>
+            <fieldset class="fieldset3">
+            <legend>Documentos Adjuntados</legend>
+                <p>
+                    <input type="checkbox" id="ifc" name="fc">Fotocopia DNI</input>
+                    <input type="checkbox" id="ifc" name="fc">Certificados Académicos</input>
+                </p>
+                <p>
+                    <input type="checkbox" id="ifc" name="fc">Otros Documentos (Especifique)</input><input type="text" id="" name=""></input>
+                </p>
+            </fieldset>
+            <input type="submit" value="Envia Solicitud">
+          </form>
+
+</body>
+</html>

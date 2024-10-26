@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Nichole" content="Louis">
+    <meta name="description" content="Practica de formularios en html">
+    <meta name="keywords" content="informatica, desarrollo web, tablas html">
+    <title>Formulario de Registro de Vehículo</title>
+</head>
+<body>
+
+<h3>Nichole A Louis</h3>
+<form action="procesar.php" method="post">
+
+    <fieldset class="fieldset1">
+        <legend>Datos Del Propietario</legend>
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="inombre" name="nombre">
+        </p>
+        <label for="isexo">Tu Sexo:</label>
+                <input type="radio" id="isexo" name="Sexo">Mujer</input>
+                <input type="radio" id="isexo" name="Sexo">Hombre</input>
+    </fieldset>
+    <fieldset class="fieldset1">
+        <legend>Datos del vehículo</legend>
+            <p>
+            <label for="marca,modelo"> Marca/modelo: </label>
+            <input type="text" id="imarca" name="caracteristicas[]" checked>
+            </p>
+            <p>
+            <label for="utilitario">Matrícula: </label>
+            <input type="text" id="imatricula" name="caracteristicas[]" checked>
+            </p>
+            <p>
+            <select name="caracteristicas" id="icaracteristicas">
+                <option value="1">utilitario</option>
+                <option value="1">Todo Terreno</option>
+                <option value="1">Alta gama</option>
+            </select>
+            </p>
+            <p>
+            <label>Otros datos: </label>
+            </p>
+            <p>
+            <input type="checkbox" id="servofrenos" name="otros_datos[]" value="Servofrenos" checked>
+            <label for="servofrenos">Servofrenos</label>
+            <input type="checkbox" id="elevalunas" name="otros_datos[]" value="Elevalunas" checked>
+            <label for="elevalunas">Elevalunas</label>
+            <input type="checkbox" id="remolques" name="otros_datos[]" value="Elevalunas" checked>
+            <label for="remolques">Remolques</label>
+            </p>
+    </fieldset>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
